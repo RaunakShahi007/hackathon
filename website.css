@@ -1,0 +1,113 @@
+/* Global Reset */
+::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universal Media Styling */
+img, video, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Body Styling */
+body {
+    min-height: 100vh;
+}
+
+/* HTML Color Scheme */
+html {
+    color-scheme: white;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cc650c;
+    
+}
+
+header img {
+    width: 250px;
+    height: autopx;
+    margin-left: 50px;
+}
+
+header button {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    padding: 10px 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: #6e7570;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+/* Background Image Styling */
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image fills the container */
+}
+
+/* Text Overlay Styling */
+.text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: italic;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+/* Search Bar Styling */
+.search-container {
+    position: absolute;
+    top: 30%; /* Position below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    max-width: 550px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 18px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: #cc650c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #6e7570;
+    transition: 0.3s ease-in-out;
+}
